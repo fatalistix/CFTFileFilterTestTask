@@ -11,6 +11,7 @@ import java.util.List;
 import java.util.stream.Stream;
 
 public class Sorter {
+
     private final StringSorter stringSorter = new StringSorter();
     private final Statistics statistics;
     private final DifferentFilesWriter differentFilesWriter;

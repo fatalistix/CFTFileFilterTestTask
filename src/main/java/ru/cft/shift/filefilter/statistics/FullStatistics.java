@@ -4,6 +4,7 @@ import java.math.BigDecimal;
 import java.math.RoundingMode;
 
 public class FullStatistics implements Statistics {
+
     private long wroteIntegers = 0;
     private BigDecimal minIntegerValue = new BigDecimal(0);
     private BigDecimal maxIntegerValue = new BigDecimal(0);

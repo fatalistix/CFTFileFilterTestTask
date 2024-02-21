@@ -1,6 +1,7 @@
 package ru.cft.shift.filefilter.statistics;
 
 public class SimpleStatistics implements Statistics {
+
     private long wroteIntegers = 0;
     private long wroteFloats = 0;
     private long wroteStrings = 0;

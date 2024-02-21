@@ -7,7 +7,9 @@ import ru.cft.shift.filefilter.statistics.SimpleStatistics;
 import ru.cft.shift.filefilter.statistics.Statistics;
 
 public class FilterOptionsParser {
+
     private final Options options = new Options();
+
     public FilterOptionsParser() {
         {
             Option outputOption = new Option("o", true, "set result path");
