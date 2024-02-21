@@ -22,6 +22,11 @@ public class SimpleStatistics implements Statistics {
 
     @Override
     public String getStatisticsAsString() {
-        return String.format("Totally wrote:\nIntegers: %d\nFloats: %d\nStrings: %d\n", wroteIntegers, wroteFloats, wroteStrings);
+        return String.format("""
+                Totally wrote:
+                Integers: %d
+                Floats:   %d
+                Strings:  %d
+                """, wroteIntegers, wroteFloats, wroteStrings);
     }
 }
