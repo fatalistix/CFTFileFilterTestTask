@@ -40,6 +40,6 @@ public class FilterOptions {
 
     public CommandLine parseOptions(String[] args) throws ParseException {
         CommandLineParser parser = new DefaultParser();
-        return parser.parse(options, args, true);
+        return parser.parse(options, args, false);
     }
 }
