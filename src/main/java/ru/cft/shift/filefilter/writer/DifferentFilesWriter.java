@@ -8,6 +8,7 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 
 public class DifferentFilesWriter implements AutoCloseable {
+
     private final static String INTEGERS_FILENAME = "integers.txt";
     private final static String FLOATS_FILENAME = "floats.txt";
     private final static String STRINGS_FILENAME = "strings.txt";
