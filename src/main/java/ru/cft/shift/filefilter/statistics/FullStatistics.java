@@ -68,10 +68,12 @@ public class FullStatistics implements Statistics {
                         average value: %s
                         """,
                 wroteIntegers,
-                maxIntegerValue,
-                minIntegerValue,
-                sumOfIntegerValues,
-                sumOfIntegerValues.divide(new BigDecimal(wroteIntegers), RoundingMode.UNNECESSARY));
+                wroteIntegers == 0 ? "not available" : maxIntegerValue,
+                wroteIntegers == 0 ? "not available" : minIntegerValue,
+                wroteIntegers == 0 ? "not available" : sumOfIntegerValues,
+                wroteIntegers == 0 ? "not available" : sumOfIntegerValues.divide(
+                        new BigDecimal(wroteIntegers), RoundingMode.UNNECESSARY
+                ));
         String floatStats = String.format("""
                         Floats:
                         Totally wrote: %d
@@ -81,19 +83,21 @@ public class FullStatistics implements Statistics {
                         average value: %s
                         """,
                 wroteFloats,
-                maxFloatValue,
-                minFloatValue,
-                sumOfFloatValues,
-                sumOfFloatValues.divide(new BigDecimal(wroteFloats), RoundingMode.UNNECESSARY));
+                wroteFloats == 0 ? "not available" : maxFloatValue,
+                wroteFloats == 0 ? "not available" : minFloatValue,
+                wroteFloats == 0 ? "not available" : sumOfFloatValues,
+                wroteFloats == 0 ? "not available" : sumOfFloatValues.divide(
+                        new BigDecimal(wroteFloats), RoundingMode.UNNECESSARY
+                ));
         String stringStats = String.format("""
                         Strings:
                         Totally wrote: %d
-                        Longest string length: %d
-                        Shortest string length: %d
+                        Longest string length: %s
+                        Shortest string length: %s
                         """,
                 wroteStrings,
-                longestStringLength,
-                shortestStringLength);
+                wroteStrings == 0 ? "not available" : longestStringLength,
+                wroteStrings == 0 ? "not available" : shortestStringLength);
         return integersStats + floatStats + stringStats;
     }
 }
