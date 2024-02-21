@@ -61,11 +61,12 @@ public class FullStatistics implements Statistics {
     public String getStatisticsAsString() {
         String integersStats = String.format("""
                         Integers:
-                        Totally wrote: %d
-                        Maximum value: %s
-                        Minimum value: %s
-                        Sum of all integers: %s
-                        average value: %s
+                        Totally wrote:          %d
+                        Maximum value:          %s
+                        Minimum value:          %s
+                        Sum of all integers:    %s
+                        average value:          %s
+                        
                         """,
                 wroteIntegers,
                 wroteIntegers == 0 ? "not available" : maxIntegerValue,
@@ -76,11 +77,12 @@ public class FullStatistics implements Statistics {
                 ));
         String floatStats = String.format("""
                         Floats:
-                        Totally wrote: %d
-                        Maximum value: %s
-                        Minimum value: %s
-                        Sum of all floats: %s
-                        average value: %s
+                        Totally wrote:          %d
+                        Maximum value:          %s
+                        Minimum value:          %s
+                        Sum of all floats:      %s
+                        average value:          %s
+                        
                         """,
                 wroteFloats,
                 wroteFloats == 0 ? "not available" : maxFloatValue,
@@ -91,8 +93,8 @@ public class FullStatistics implements Statistics {
                 ));
         String stringStats = String.format("""
                         Strings:
-                        Totally wrote: %d
-                        Longest string length: %s
+                        Totally wrote:          %d
+                        Longest string length:  %s
                         Shortest string length: %s
                         """,
                 wroteStrings,
