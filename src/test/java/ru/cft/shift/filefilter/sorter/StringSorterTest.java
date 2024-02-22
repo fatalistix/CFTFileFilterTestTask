@@ -190,7 +190,11 @@ public class StringSorterTest {
                 "-1.123E10",
                 ".123E10",
                 "+.123E10",
-                "-.123E10"
+                "-.123E10",
+                "1.e+2",
+                "1.e-2",
+                "+.123e+10",
+                "-.123E-10"
         );
 
         eFloats.forEach((ef) -> {
