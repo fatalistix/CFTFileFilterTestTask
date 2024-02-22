@@ -24,9 +24,20 @@ public class FullStatisticsTest {
                 Totally wrote:          3
                 Maximum value:          4
                 Minimum value:          2
-                Sum of all integers:    10
+                Sum of all values:      10
                 average value:          3.33333333333333333333
                 
+                Floats:
+                Totally wrote:          0
+                Maximum value:          not available
+                Minimum value:          not available
+                Sum of all values:      not available
+                average value:          not available
+                               
+                Strings:
+                Totally wrote:          0
+                Longest string length:  not available
+                Shortest string length: not available
                 """, statistics.getStatisticsAsString());
     }
 }
