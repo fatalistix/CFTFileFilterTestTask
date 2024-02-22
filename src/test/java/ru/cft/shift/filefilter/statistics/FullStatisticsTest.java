@@ -17,7 +17,6 @@ public class FullStatisticsTest {
         );
 
         integers.forEach(statistics::registerInteger);
-        System.out.println(statistics.getStatisticsAsString());
 
         Assertions.assertEquals("""
                 Integers:
